@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+        display: flex;
+        gap: 40px;
+      }
+      
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: lightblue;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      
+      .with-padding {
+        padding: 50px;
+        background-color: lightgreen;
+      }
+      
+      .with-margin {
+        margin: 0;
+        background-color: lightsalmon;
+      }
+      
+      .label {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        background-color: #fff;
+        color: #333;
+        line-height: 1.6;
+      }
+      
+      h2 {
+        margin-top: 40px;
+        color: #444;
+      }
+      
+  </style>
+</head>
+<body>
+
+<h2>📦 Padding vs Margin</h2>
+
+<div class="container">
+  <div>
+    <div class="label">Padding</div>
+    <div class="box with-padding">Inside spacing (padding)<br>pushes content inward</div>
+  </div>
+
+  <div>
+    <div class="label">Margin</div>
+    <div class="box with-margin">Outside spacing (margin)<br>pushes elements away</div>
+  </div>
+</div>
+<h2>Padding + Margin Together</h2>
+<div style="padding: 30px; margin: 30px; background: lightcoral; color: white; width: 300px; align-items:center;height:200px ">
+    Padding gives inner space. <br>
+    Margin gives outer space. <br><br>
+    🧠 Use Dev Tools to see the box model!
+  </div>
+  <h2>Flexbox Behavior</h2>
+  <div style="display: flex; justify-content: center,space-around; background: #eee; padding: 10px;">
+    <div style="background: lightpink; padding: 20px;">Flex Child 1</div>
+    <div style="background: lightblue; padding: 20px;">Flex Child 2</div>
+    <div style="background: lightgreen; padding: 20px;">Flex Child 3</div>
+  </div>
+<h2>Visual Challenge Task</h2>  
+<div style="display: flex; justify-content: center; align-items: center; height: 200px; background: #f1f1f1;">
+    <div style="margin: 50px;padding:30px; background: darkslateblue; color: white;">
+      Challenge Box<br>
+      Has both padding & margin
+    </div>
+  </div>
+  
+
+</body>
+</html>
