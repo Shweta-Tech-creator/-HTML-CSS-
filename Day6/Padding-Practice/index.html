@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Padding </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    .box {
+      padding: 10px 30px;
+      background-color: lightblue;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      padding: 10px 20px 50px;
+      margin-bottom: 20px;
+    }
+
+    .padding-example {
+      padding: 30px 10px 5px 0;
+      padding-left: 10px;
+      background: peachpuff;
+      margin-bottom: 20px;
+    }
+
+    .margin-box {
+      margin-bottom: 40px;
+      background: lavender;
+      padding: 10px;
+    }
+
+    .second-box {
+      background: thistle;
+      padding: 10px;
+    }
+
+    .centered-box {
+      width: 200px;
+      margin: auto;
+      background: lightgreen;
+      padding: 10px;
+      border: 2px solid green;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .margin-all-sides {
+      margin: 30px 10px;
+      background: mistyrose;
+      padding: 10px;
+    }
+
+    .flex-row {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .flex-box {
+      padding: 20px;
+    }
+
+    .flex-box1 {
+      background: lightcoral;
+    }
+
+    .flex-box2 {
+      background: lightseagreen;
+    }
+
+    .flex-box3 {
+      background: lightskyblue;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100px;
+      background: lightyellow;
+      margin-bottom: 20px;
+    }
+
+    .centered-inner {
+      background: tomato;
+      padding: 20px;
+    }
+
+    .responsive-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .column {
+      flex: 1 1 200px;
+      padding: 20px;
+    }
+
+    .col1 { background: skyblue; }
+    .col2 { background: lightpink; }
+    .col3 { background: lightgray; }
+    .col4 { background: lightgreen; }
+  </style>
+</head>
+<body>
+
+  <h1>Padding (Space Inside the Element)</h1>
+
+  <h2>Basic Padding Box</h2>
+  <div class="box">This box has 10px top/bottom and 30px left/right padding.</div>
+
+  <h2>Padding for a Button</h2>
+  <button class="button">Click Me</button>
+
+  <h2>Different Padding Sides</h2>
+  <div class="padding-example">Top padding is more!</div>
+
+  <h1>Margin (Space Outside the Element)</h1>
+
+  <h2>Margin Between Two Boxes</h2>
+  <div class="margin-box">First box</div>
+  <div class="second-box">Second box</div>
+
+  <h2>Auto Margin Centering</h2>
+  <div class="centered-box">Centered Box</div>
+
+  <h2>Margin on All Sides</h2>
+  <p class="margin-all-sides">Margins make room outside the element.</p>
+
+  <h1>Flexbox (Smart Layouts)</h1>
+
+  <h2>Simple Horizontal Layout</h2>
+  <div class="flex-row">
+    <div class="flex-box flex-box1">Box 1</div>
+    <div class="flex-box flex-box2">Box 2</div>
+    <div class="flex-box flex-box3">Box 3</div>
+  </div>
+
+  <h2>Centering with Flex</h2>
+  <div class="flex-center">
+    <div class="centered-inner">Top Aligned</div>
+  </div>
+
+  <h2>Responsive Columns</h2>
+  <div class="responsive-columns">
+    <div class="column col1">Column 1</div>
+    <div class="column col2">Column 2</div>
+    <div class="column col3">Column 3</div>
+    <div class="column col4">Column 4</div>
+  </div>
+
+</body>
+</html>
