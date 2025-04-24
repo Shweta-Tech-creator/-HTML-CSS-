@@ -1,320 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 20px;
-            background-color: hsl(210, 17%, 98%);
-            color: #333;
-          }
-      
-          h1 {
-            color: #2c3e50;
-            font-size: 24px;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
-          }
-      
-          header {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #34495e;
-          }
-      
-          table {
-            width: auto;
-            margin-bottom: 30px;
-            border-collapse: collapse;
-            background-color: #ffffff;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-          }
-      
-          table th, table td {
-            padding: 12px 16px;
-            border: 1px solid #ccc;
-          }
-      
-          table th {
-            background-color: #4CAF50;
-            color: white;
-          }
-      
-          tr:nth-child(even) {
-            background-color: #f2f2f2;
-          }
-      
-          caption {
-            caption-side: top;
-            font-weight: bold;
-            font-size: 1.3em;
-            margin: 10px 0;
-            color: #2c3e50;
-          }
-      
-          tr:hover {
-            background-color: #dff0d8;
-            transition: 0.3s;
-          }
-      
-          img {
-            border-radius: 10px;
-            max-width: 100%;
-            height: auto;
-          }
-          .responsive-table {
-            width: 100%;
-            overflow-x: auto;
-          }
-          table {
-            width: 100%;
-            border-collapse: collapse;
-          }
-          th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
-          }
-    </style>
+
+ <title>📝 My Project – HTML Level Up</title>
+ <link rel="icon" href="https://i.pinimg.com/736x/76/f3/f3/76f3f3007969fd3b6db21c744e1ef289.jpg" type="image/x-icon">
+ <link rel="shortcut icon" href="https://i.pinimg.com/736x/76/f3/f3/76f3f3007969fd3b6db21c744e1ef289.jpg" type="image/png">
 </head>
 <body>
-    <header>Table-Tag</header>
-    <h1>Very Basic Table</h1>
-    <table border="1">
-        <tr>
-          <td>Cell 1</td>
-          <td>Cell 2</td>
-        </tr>
-        <tr>
-            <td>Cell 3</td>
-            <td>Cell 3</td>
-        </tr>
-      </table>
-      <h1>Table with Headers</h1>
-      <table border="1">
-        <tr>
-          <th>City</th>
-          <th>Population</th>
-        </tr>
-        <tr>
-          <td>Thane</td>
-          <td>2cr</td>
-        </tr>
-      </table>
-      <h1>Table with Caption</h1>
-      <table border="1">
-        <caption>Gender</caption>
-        <tr>
-          <th>Ganesh</th>
-          <th>Shweta</th>
-        </tr>
-        <tr>
-          <td>Male</td>
-          <td>Female</td>
-        </tr>
-      </table>
-      <h1>Add 3 Rows</h1>
-      <table border="1">
-        <tr>
-          <th>Fruit</th>
-          <th>Color</th>
-        </tr>
-        <tr><td>Apple</td><td>Red</td></tr>
-        <tr><td>Banana</td><td>Yellow</td></tr>
-        <tr><td>Grapes</td><td>Purple</td></tr>
-        <tr><td>Mango</td><td>Yellow-Orange</td></tr>
-      </table>
-      <h1>Mix th & td</h1>
-      <table border="1">
-        <tr><th>Item</th><td>Pencil</td></tr>
-        <tr><th>Price</th><td>$1</td></tr>
-        <tr><th>Quantity</th><td>9</td></tr>
-      </table>
-      <h1> Table with Styles</h1>
-      <table style="border: 2px solid rgb(164, 80, 80); border: radius 20px; ">
-        <tr><td>Styled Cell</td><td>Another</td></tr>
-      </table>
-      <h1> Use colspan</h1>
-      <table border="1">
-        <tr><th colspan="2">Full Row</th></tr>
-        <tr><td>Left</td><td>Right</td></tr>
-        <tr><td>East</td><td>West</td></tr>
-      </table>
-      <h1>Use rowspan</h1>
-      <table border="1">
-        <tr><th rowspan="2">Category</th><td>Math</td></tr>
-        <tr><td>Science</td></tr>
-        <tr><th rowspan="2">Language</th><td>English</td></tr>
-        <tr><td>Marathi</td></tr>
-      </table>
-      <h1>Table With Emoji Caption</h1>
-      <table border="1">
-        <caption>📚 Subject Scores</caption>
-        <tr><th>Subject</th><th>Marks</th></tr>
-        <tr><td>Math</td><td>90</td></tr>
-        <tr><td>History</td><td>95</td></tr>
-      </table>
-      <h1> Add Hover Effect</h1>
-      <style>
-        tr:hover { background-color: #b21549; }
-      </style>
-      <table border="1">
-        <tr><th>Book</th><th>Author</th></tr>
-        <tr><td>1984</td><td>George Orwell</td></tr>
-      </table>
-      <h1>Style Headings Only</h1>
-      <style>
-        th {
-          background-color: black;
-          color: white;
-        }
-      </style>
-      <table border="1">
-        <tr><th>Student</th><th>Score</th></tr>
-        <tr><td>Science</td><td>85</td></tr>
-      </table>
-      <h1>Table Width</h1>
-      <table border="1" style="width: 300px;">
-        <tr><td>Wide Cell</td><td>Another</td></tr>
-      </table>
-      <h1>Add Border Collapse</h1>
-      <style>
-        table { border-collapse: collapse; }
-        td, th { border: 1px solid #dd9696; padding: 10px; }
-      </style>
-      <table>
-        <tr><th>Movie</th><th>Year</th></tr>
-        <tr><td>Inception</td><td>2010</td></tr>
-      </table>
-      <h1>Add Background Color to Rows</h1>
-      <style>
-        tr:nth-child(odd) { background-color: #eee; }
-      </style>
-      <table border="1">
-        <tr><th>Day</th><th>Activity</th></tr>
-        <tr><td>Mon</td><td>Gym</td></tr>
-        <tr><td>Tue</td><td>Study</td></tr>
-      </table>
-      <h1>Combine All Tags</h1>
-      <table border="1" aria-colspan="10" >
-        <caption>🧮 Budget Sheet</caption>
-        <tr><th>Item</th><th>Cost</th></tr>
-        <tr><td>Rent</td><td>$500</td></tr>
-        <tr><td>Food</td><td>$200</td></tr>
-      </table>
-      <h1> Fancy Table</h1>
-      <style>
-        table {
-          width: 50%;
-          margin: auto;
-          border: 2px dashed rgb(4, 5, 6);
-        }
-      </style>
-      <table>
-        <caption>🎨 Colors</caption>
-        <tr><td style="background-color: rgb(124, 159, 219);">green</td><td>#FF0000</td></tr>
-      </table>
-      <h1>Capital Cities Table</h1>
-      <table border="1">
-        <tr><th>Country</th><th>Capital</th></tr>
-        <tr><td>France</td><td>Paris</td></tr>
-        <tr><td>Albania</td><td>Tirana</td></tr>
-        <tr><td>Algeria</td><td>Algiers</td></tr>
-        <tr><td>Colombia</td><td>Bogota</td></tr>
-      </table>
-      <h1> Add Images in Cells</h1>
-      <table border="1">
-        <tr>
-          <td><img width="300cm" height="300cm" src="https://i.pinimg.com/736x/7a/29/0f/7a290fe517c932552232cf134e9b4149.jpg" alt="Sample"></td>
-          <td>Description</td>
-        </tr>
-      </table>
-      <h1>Table Without Borders</h1>
-      <table border="2">
-        <tr><td>No</td><td>Borders</td></tr>
-      </table>
-      <h1> Use Table for Layout</h1>
-      <table border="1" style="width: 10cm;" >
-        <tr><td>Left Menu  </td><td>Main Content</td></tr>
-      </table>
-      <h1> Table Inside a Table</h1>
-      <table border="1">
-        <tr>
-          <td>Outer Table
-            <table border="1">
-              <tr><td>Inner Table</td></tr>
-            </table>
-            <td> table
-              <table border="1">
-                <tr><td>Mid Table</td></tr>
-              </td>
-            </table>
-          </td>
-        </tr>
-      </table>
-      <h1> Table with Merged Cells</h1>
-      <table border="1">
-        <tr><td rowspan="2" colspan="2">A</td><td>B</td></tr>
-        <tr><td>C</td></tr>
-      </table>
-      <h1>Align Text</h1>
-      <table border="1">
-        <tr><td style="text-align: right; vertical-align:top; ">Right</td><td style="text-align: center; vertical-align:top;">Center</td></tr>
-      </table>
-      <h1> Responsive Width Table</h1>
-      <div class="responsive-table">
-        <table>
-          <tr>
-            <th>Full Width Table</th>
-            <th>✓</th>
-          </tr>
-          <tr>
-            <td>Stretches to screen</td>
-            <td>Yes</td>
-          </tr>
-        </table>
-      </div>
-      <h1>Table Challenge!</h1>  
-      <table border="1" style="border-collapse: collapse; width: 60%; text-align: center;">
-        <caption style="font-weight: bold; font-size: 1.2em;">🌟 Team Performance Summary</caption>
-        <thead style="background-color: #f2f2f2; color: #333;">
-          <tr>
-            <th>Member</th>
-            <th>Role</th>
-            <th>Performance</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Shweta</td>
-            <td>Developer</td>
-            <td>Excellent 😎</td>
-          </tr>
-          <tr>
-            <td>Aniket</td>
-            <td>Designer</td>
-            <td>Good</td>
-          </tr>
-          <tr>
-            <td colspan="3" style="background-color: #e0ffe0;">Teamwork was amazing! 🤝</td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+ <!-- 1. Resume Snippet -->
+ <h2><u>Shweta kadam</u></h2>
+ <p><strong>Email:</strong> <em>kadamsweta92@gmail.com</em></p>
+ <p><mark>Skills:</mark> <small>HTML, CSS, Git, Python</small></p>
+ <p>Experience since <sup>2024</sup></p>
+
+ <hr>
+
+ <!-- 2. Quotations -->
+ <blockquote cite="https://www.amazon.com">
+ “This product changed my life!” – <abbr title="Verified Customer">VC</abbr>
+ </blockquote>
+ <blockquote cite="https://www.trustpilot.com">
+ “Outstanding service and fast delivery.” – <abbr title="Happy Buyer">HB</abbr>
+ </blockquote>
+ <q>Worth every penny.</q>
+
+ <hr>
+
+ 
+ <h1>Welcome to My Page</h1> 
+
+ <p>Shweta</p>
+
+ <hr>
+ <table border="1">
+ <tr>
+ <td style="background-color: hashtag#ff4d4d;">hashtag#ff4d4d</td>
+ <td style="background-color: rgb(77, 255, 136);">rgb(77, 255, 136)</td>
+ <td style="background-color: hsl(210, 100%, 70%);">hsl(210, 100%, 70%)</td>
+ </tr>
+ </table>
+
+ <hr>
+ <div class="card" style="border: 2px solid #333; padding: 20px; width: 300px; background-color: hashtag#fafafa;">
+ <h3 style="color: #333;">📦 Product Name : Stationary Items</h3>
+ <p style="font-size: 14px;">Stationery encompasses a range of writing and drawing materials, including pens, pencils, paper, notebooks, and related supplies. These items are essential for communication, organization, and creativity in various settings like offices, schools, and homes. Stationery provides the tools needed for tasks such as writing letters, taking notes, and creating artwork. .</p>
+ </div>
+
+ <hr>
+
+ <!-- 6. Button Links -->
+ <a href="https://chat.openai.com" class="button1">Go to ChatGPT</a>
+ <a href="https://www.google.com" class="button2">Google</a>
+
+ <hr>
+
+ <!-- 7. Image Grid -->
+ <table>
+ <tr>
+ <td><img src="https://i.pinimg.com/736x/6d/95/6c/6d956cee37967a3fdd91bb665ce254c6.jpg" alt="Sample placeholder 1 - a gray box with 100x100 pixels" width="300" height="300"></td>
+ <td><img src="https://i.pinimg.com/736x/16/b8/df/16b8df8d55d0aa01b8846444c158d005.jpg" alt="Sample placeholder 2 - identical image with dummy content" width="300" height="300"></td>
+ </tr>
+ </table>
+
+ <hr>
+
+ <hr>
+ <table border="1" class="invoice-table">
+ <caption><strong>🧾 Invoice Summary</strong></caption>
+ <tr><th>Item</th><th>Qty</th><th>Price</th></tr>
+ <tr><td>Pen</td><td>2</td><td>$1.00</td></tr>
+ <tr><td>Notebook</td><td>1</td><td>$2.50</td></tr>
+ <tr><td>Bag</td><td>1</td><td>$10.00</td></tr>
+ <tr><td colspan="2">Total</td><td>$13.50</td></tr>
+ </table>
+
+ <hr>
+ <ul class="custom-bullets">
+ <li>Home</li>
+ <li>About
+ <ul>
+ <li>Team</li>
+ <li>Mission</li>
+ </ul>
+ </li>
+ <li>Contact</li>
+ </ul>
+
+ <hr>
+ <div style="border: 1px solid black; padding: 10px;">
+ <span style="color: red;">Red</span> and
+ <span style="color: green;">Green</span> in a block.
+ </div>
+ <div class="inline-div">Div 1</div>
+ <div class="inline-div">Div 2</div>
+ <div class="inline-div">Div 3</div>
+
 </body>
 </html>
