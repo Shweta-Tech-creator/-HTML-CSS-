@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal Link Example</title>
+    <style>
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f6f8;
+        }
+
+        nav {
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 50px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            border-left: 5px solid #007BFF;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#section1">Go to Section 1</a>
+        <a href="#section2">Go to Section 2</a>
+    </nav>
+
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the content of section 1. Click the links in the navbar to jump between sections.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the content of section 2. You jumped here using an internal link!</p>
+    </section>
+
+</body>
+</html>
