@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          }
+          
+          input[type="text"], input[type="email"], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #45a049;
+          }
+          input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          input[type="password"]:focus {
+            border-color: #4CAF50;
+          }
+          
+          input[type="password"]::placeholder {
+            color: #aaa;
+          }
+          input[type="checkbox"], input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+          
+          label {
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin-bottom: 10px;
+          }
+          
+          label:hover {
+            color: #4CAF50;
+          }
+          select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+          }
+          
+          select:hover {
+            border-color: #4CAF50;
+          }
+          
+          option {
+            padding: 10px;
+          }
+          button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+            cursor: pointer;
+          }
+          
+          button[type="reset"] {
+            background-color: #f44336;
+          }
+          
+          button:hover {
+            opacity: 0.8;
+          }
+          
+          button[type="reset"]:hover {
+            opacity: 0.8;
+          }
+          textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+          }
+          
+          textarea:focus {
+            border-color: #4CAF50;
+          }
+          form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+          }
+          
+          input[type="text"], input[type="email"], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          @media (max-width: 768px) {
+            form {
+              width: 90%;
+            }
+          }
+          input:valid {
+            border-color: green;
+          }
+          
+          input:invalid {
+            border-color: red;
+          }
+          
+          input:invalid:focus {
+            box-shadow: 0 0 5px red;
+          }
+          
+          
+          
+    </style>
+</head>
+<body>
+    <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <button type="submit">Submit</button>
+      </form>
+      <form action="/submit-form" method="POST">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      
+        <button type="submit">Submit</button>
+      </form>
+      <form action="/submit-form" method="POST">
+        <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to Newsletter</label><br>
+      
+        <label><input type="radio" id="male" name="gender" value="Male"> Male</label>
+        <label><input type="radio" id="female" name="gender" value="Female"> Female</label>
+      
+        <button type="submit">Submit</button>
+      </form>
+      <form action="/submit-form" method="POST">
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="canada">Canada</option>
+        </select>
+      
+        <button type="submit">Submit</button>
+      </form>
+      <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <form action="/submit-form" method="POST">
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback..."></textarea>
+      
+        <button type="submit">Submit</button>
+      </form>
+      <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <button type="submit">Submit</button>
+      </form>
+      <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+</body>
+</html>
