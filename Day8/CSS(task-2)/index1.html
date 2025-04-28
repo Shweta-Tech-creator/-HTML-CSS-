@@ -1,0 +1,207 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ganpati Bappa Morya</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #ec5e60, #eeb55e, #fff48f); /* red -> orange -> yellow */
+            color: #333;
+            line-height: 1.6;
+          }
+        
+
+    /* Card Section */
+    .card {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to right, #ffe0ec, #ffd6f6);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+
+    .card .image img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .info {
+      flex-grow: 1;
+    }
+
+    .info h1 {
+      font-size: 28px;
+      color: #6a1b9a;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      font-size: 18px;
+      color: #4a148c;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #6a1b9a;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .navbar li {
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffca28;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 200px;
+      background-color: #e1bee7;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .main-content {
+      flex: 2;
+      min-width: 300px;
+      background-color: #b3e5fc;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 20px;
+      color: #01579b;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #6a1b9a;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 16px;
+      margin-top: 40px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        flex-direction: column;
+      }
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .card .image img {
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Card -->
+  <div class="card">
+    <div class="image">
+      <img src="https://i.pinimg.com/736x/7a/29/0f/7a290fe517c932552232cf134e9b4149.jpg" alt="Ganpati Image">
+    </div>
+    <div class="info">
+      <h1>।। गणपती बाप्पा मोरया ।।</h1>
+      <p>वक्रतुंड महाकाय सूर्य कोटी समप्रभ, निर्विघ्नहं कुरु मे दैव सर्व कार्येषु सर्वदा..</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Aartis & Mantras</a></li>
+      <li><a href="#">Events / Schedule</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="sidebar left">
+        <h3>   Left Sidebar  </h3>
+        <img src="https://i.pinimg.com/236x/70/aa/fc/70aafcb4d56beca6ae24d79867c31b10.jpg" style="width: 400px; height:600px  " alt="image">
+    </div>
+
+    <div class="main-content">
+      ॥ श्री गणेशाय नमः ॥ <br><br>
+      आला रे आला, गणराय आला!<br>
+      सुखकर्ता, दुःखहर्ता, मंगलमूर्ती, मोरया!<br><br>
+      बाप्पाच्या आगमनाने घरात आनंदाचे वारे वाहू लागलेत,<br>
+      मन प्रसन्न झालंय, भक्तीभावाने वातावरण भारलेलं आहे.<br><br>
+      गणपती बाप्पा, तुझ्या चरणी आमची श्रद्धा आणि भक्ती अर्पण करतो.<br>
+      सर्वांचे संकट दूर कर, जीवनात नवे मार्ग दाखव.<br><br>
+      जय देव जय देव, जय मंगलमूर्ती!<br><br>
+      ॥ गणपती बाप्पा मोरया, पुढच्या वर्षी लवकर या! ॥
+    </div>
+
+    <div class="sidebar right">
+      <h3>Right Sidebar</h3>
+      <img src="https://i.pinimg.com/736x/d2/ad/a3/d2ada37e46922403195edac4ed0acd99.jpg" style="width: 400px; height:1000px  alt="image">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    ©️ 2025 गणपती बाप्पा मोरया
+  </footer>
+
+</body>
+</html>
