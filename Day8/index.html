@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"], input[type="email"], input[type="password"] {
+          padding: 10px;
+          margin: 5px;
+          width: 100%;
+          border: 1px solid #ccc;
+        }
+        button {
+          padding: 10px 20px;
+          background-color: #45a049;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #45a049;
+        }
+      </style>
+</head>
+<body>
+    <h1> Basic Form Structure</h1>
+    <form action="/submit-form" method="POST">
+        <label for="name"> Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>      
+    <h1> Input Fields – Text, Password, and Email</h1>
+    <label for="username"> Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password"> Password:</label>
+    <input type="text" id="password" name="password" required >
+
+    <label for="Email"> Email:</label>
+    <input type="text" name="Email" id="Email" >
+
+    <h1>Checkbox</h1>
+    <label for="subscribe">Subscribe to newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe">
+
+    <h1>Radio Buttons</h1>
+    <label>Choose your favorite color:</label>
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">Red</label>
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">Blue</label>
+
+    <h1>Select Dropdown</h1>
+    <label for="city">Select your city:</label>
+    <select id="city" name="city">
+    <option value="nyc">New York</option>
+    <option value="la">Los Angeles</option>
+    <option value="sf">San Francisco</option>
+    </select>
+    
+    <h1>Textarea (Multi-line Text Input)</h1>
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    
+    <h1>File Upload</h1>
+    <label for="file">Upload your resume:</label>
+    <input type="file" id="file" name="resume">
+
+    <h1>Submit Button</h1>
+    <button type="submit">Submit</button>
+     
+    <h1>Reset Button</h1>
+    <button type="reset">Reset</button>
+    
+    <h1>Custom Button</h1>
+    <button type="button" onclick="alert('Hello!')">Click Me</button>
+
+    <h1> Grouping Form Elements (Fieldset & Legend)</h1>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name">
+      </fieldset>
+      
+      <h1>Form Validation (Required)</h1>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <h1>Form Validation(Pattern (Regex))</h1>
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" pattern="\d{3}[-]\d{3}[-]\d{4}" required>
+      <h1>Minimum and Maximum Value</h1>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="100" required>
+
+      <h1>Form Action and Method</h1>
+      <form action="submit_form.php" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Submit</button>
+      </form>
+
+      <h1> Multiple Forms on One Page</h1>
+      <form action="login.php" method="POST">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="email" required>
+        <button type="submit">Login</button>
+      </form>
+      
+      <form action="register.php" method="POST">
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" name="email" required>
+        <button type="submit">Register</button>
+      </form>
+      
+      <h1>Hidden Input Fields</h1>
+      <input type="hidden" name="user_id" value="12345">
+
+  
+</body>
+</html>
