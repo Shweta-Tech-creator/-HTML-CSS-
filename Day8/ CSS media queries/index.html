@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      margin: 10px 0;
+    }
+  }
+  /* Desktop version */
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .content {
+    width: 48%;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .content {
+      width: 100%;
+    }
+  }
+  /* Default (desktop) */
+  h1 {
+    font-size: 36px;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  /* Sidebar is visible on larger screens */
+.sidebar {
+    width: 300px;
+    float: left;
+  }
+  
+  .main-content {
+    margin-left: 320px;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  /* Desktop version */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    background-color: #e4e4e4;
+    text-align: center;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Desktop version */
+body {
+    background-color: lightblue;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  /* Desktop version */
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item {
+    width: 30%;
+    padding: 10px;
+    background-color: lightgray;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .item {
+      width: 80%;
+      margin: 10px 0;
+    }
+  }
+  /* Default (desktop) */
+h1 {
+    font-weight: bold;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    h1 {
+      font-weight: normal;
+    }
+  }
+  /* Default (desktop) */
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+    }
+  }
+  /* Default (desktop) */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile version */
+  @media (max-width: 768px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* Default styles */
+h1 {
+    font-size: 24px;
+  }
+  
+  /* Tablet screens */
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 18px;
+    }
+  }
+    </style>
+</head>
+<body>
+    <h3>Mobile-Friendly Navigation</h3>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    <h3> Two-Column to Single-Column Layout</h3>
+    <div class="container">
+        <div class="content">Content 1</div>
+        <div class="content">Content 2</div>
+      </div>
+    <h3>Resizing Text for Mobile</h3>
+    <h1>Welcome to My Website</h1>
+    
+    <h3>Hiding Sidebar on Mobile</h3>
+    <div class="sidebar">Sidebar Content</div>
+    <div class="main-content">Main Content</div>
+     
+    <h3>Stacked Cards Layout</h3>
+    <div class="card-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+      </div>
+      
+    <h3>Changing Background Colors Based on Device</h3>
+    <body>
+        <h1>Responsive Background</h1>
+      </body>
+    <h3>Flexbox Layout Adjustment</h3>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    <h3>Font Weight Adjustment</h3> 
+    <h1>Heading Title</h1>
+
+    <h3>Adjusting Button Size for Touch Devices</h3>
+    <button>Click Me</button>
+
+
+    <h3>Changing the Layout of Images</h3>
+    <img src="https://i.pinimg.com/736x/7a/29/0f/7a290fe517c932552232cf134e9b4149.jpg" style="width: 200px;" alt="Sample Image">
+    
+    <h3>Combining Multiple Media Queries</h3>
+    <h1>Responsive Font Size</h1>
+
+</body>
+</html>
