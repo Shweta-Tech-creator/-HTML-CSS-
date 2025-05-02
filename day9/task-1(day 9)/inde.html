@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            animation: colorchange  ;
+            animation-duration: 5s;
+
+        }
+        @keyframes colorchange{
+            from{background-color: red;}
+            to{background-color: yellow;}
+        }
+        .multi{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: movecolor 5s forwards;
+        }
+        @keyframes movecolor{
+            0%   { left: 0; background: red; }
+            25%  { left: 50px; background: orange; }
+            50%  { left: 100px; background: yellow; }
+            100% { left: 150px; background: green; }
+         
+            }
+            .pulse {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: blue;
+                animation: pulseAnim 1s infinite alternate;
+              }
+            
+              @keyframes pulseAnim {
+                from { transform: scale(1); }
+                to   { transform: scale(1.2); }
+              }
+    
+    </style>
+</head>
+<body>
+    <h1>Basic Color Animation</h1>
+    <div class="box">
+    </div>
+    <h1>Multi-step Animation</h1>
+    <div class="multi">
+    </div>
+    <h1> Infinite Loop Animation</h1>
+    <div class="pulse"></div>
+</body>
+</html>

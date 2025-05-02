@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hover-btn:hover {
+          background: linear-gradient(blue,white);
+        }
+        input:focus {
+            border: 2px solid royalblue;
+            outline: none;
+          }
+          li:first-child {
+            color: red;
+          }
+          h2::before {
+            content: "♦️";
+          }
+          p::first-letter {
+            font-size: 300%;
+            color: darkorange;
+          }
+          li::marker {
+            content: "➤ ";
+            color: purple;
+          }
+          .shine-btn {
+            position: relative;
+            padding: 12px 30px;
+            background: #3498db;
+            color: white;
+            border: none;
+            overflow: hidden;
+            font-size: 16px;
+          }
+        
+          .shine-btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: skewX(-20deg);
+          }
+        
+          .shine-btn:hover::after {
+            animation: slide-shine 0.75s linear forwards;
+          }
+        
+          @keyframes slide-shine {
+            to { left: 125%; }
+          }
+      </style>
+      
+</head>
+<body>
+    <h1>Hover Effect</h1>
+    <button class="hover-btn">Hover Me</button><hr>
+    <h1>Focus State Styling</h1>
+    <input type="text" placeholder="Focus me"><hr>
+    <h1>First-child Styling</h1>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+      </ul><hr>
+      <h1>Add Decorative Content</h1>
+      <h2>Introduction</h2><hr>
+      <h1>First-letter Styling</h1>
+      <p>Learning CSS is fun and powerful.</p><hr>
+      <h1>Custom List Markers</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul><hr>
+      <h1>Animated Button with Shine Effect</h1>
+      <button class="shine-btn">Click Me</button>
+
+</body>
+</html>

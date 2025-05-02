@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+.square {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: slideright 5s forwards;
+}
+
+@keyframes slideright {
+  25%  { left: 50px; background: orange; }
+  50%  { left: 100px; background: yellow; }
+  100% { left: 150px; background: black; }
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  animation: changeColor 3s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes changeColor {
+  0%, 100% { background-color: red; }
+  50%      { background-color: blue; }
+}
+
+.circle1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  animation: bounce 1s ease-out 2s;
+  animation-iteration-count: 3;
+}
+
+.slider {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(180, 70, 70);
+  position: relative;
+  animation: slide 2s linear infinite alternate;
+}
+
+@keyframes slide {
+  0%   { left: 0; }
+  100% { left: 300px; }
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  position: relative;
+  animation: move 2s forwards;
+}
+
+.linear      { animation-timing-function: linear; }
+.ease-in     { animation-timing-function: ease-in; }
+.ease-out    { animation-timing-function: ease-out; }
+.ease-in-out { animation-timing-function: ease-in-out; }
+
+@keyframes move {
+  from { left: 0; }
+  to   { left: 300px; }
+}
+
+
+.square1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(49, 71, 59);
+  animation: grow 3s forwards;
+}
+
+
+.square2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(26, 28, 140);
+  transform: scale(0.5); 
+  animation: grow 3s backwards;
+}
+
+@keyframes grow {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+
+.square3 {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  position: relative;
+  animation: move 2s linear infinite;
+  animation-play-state: running;
+}
+
+
+.loader {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(20, 196, 255);
+  border-radius: 50%;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-20px); }
+}
+
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-family: sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background-color: dodgerblue;
+  transition: width 0.4s ease;
+}
+
+.card:hover::after {
+  width: 100%;
+}
+
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+    
+    </style>
+</head>
+<body>
+    <h1> Use animation-name & animation-duration</h1>
+    <div class="square"></div>
+    <h1>Apply animation-delay</h1>
+    <div class="circle">
+    </div>
+    <h1>Experiment with animation-iteration-count</h1>
+    <div class="circle1"></div>
+    <h1>Use animation-direction</h1>
+    <div class="slider"></div>
+    <h1>Compare animation-timing-function Options</h1>
+    <div class="container">
+        <div class="label">linear</div>
+        <div class="box linear"></div>
+      </div>
+    
+      <div class="container">
+        <div class="label">ease-in</div>
+        <div class="box ease-in"></div>
+      </div>
+    
+      <div class="container">
+        <div class="label">ease-out</div>
+        <div class="box ease-out"></div>
+      </div>
+    
+      <div class="container">
+        <div class="label">ease-in-out</div>
+        <div class="box ease-in-out"></div>
+      </div>
+      <h1> animation-fill-mode</h1>
+      <div class="square1"></div>
+      <h1> Use animation-fill-mode: backwards</h1>
+      <div class="square2"></div>
+      <h1>Toggle animation-play-state</h1>
+      <div class="square3"></div>
+      <h1>Combine All Animation Properties</h1>
+      <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <h1>Hover-triggered Animation</h1>
+      <div class="card">
+        Hover me to slide in
+      </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
